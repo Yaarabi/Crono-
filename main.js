@@ -27,7 +27,11 @@ function resetCrono(){
     document.getElementById('secand').innerText='00'
     document.getElementById('min').innerText='00'
     document.getElementById('hour').innerText='00'
-}
+    
+    }
+
+    
+
 function screen(){
     let s=document.getElementById('secand').innerText
     let m=document.getElementById('min').innerText
@@ -43,6 +47,7 @@ let tabBtn = document.getElementById('btn');
 tabBtn.addEventListener('click', function() {
     let newSpan = document.createElement("span");
     document.getElementById('cronoHistorique').appendChild(newSpan);
-    newSpan.appendChild(document.createTextNode(`${screen()}`)); 
+    newSpan.appendChild(document.createTextNode(`${screen()}`));
+    document.getElementById('cronoHistorique').style.display='flex'
 });
 
